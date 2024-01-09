@@ -9,7 +9,7 @@
     <?php
     $age=18;
     echo "You ";
-    echo ($age<=18)? "can ": "cannot ";
+    echo ($age<=18)? "You can vote ": "You cannot vote ";
     echo "vote ";
     ?>
 </body>
