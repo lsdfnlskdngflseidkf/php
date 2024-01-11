@@ -1,0 +1,25 @@
+Switch>enable
+
+Switch#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+
+Switch(config-if)#vlan 10
+Switch(config-vlan)#name bbm
+Switch(config-vlan)#exit
+Switch(config)#vlan 20
+Switch(config-vlan)#name bim
+Switch(config)#exit
+Switch(config)#int FastEthernet0/1
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit
+Switch(config)#int FastEthernet0/2
+%Invalid interface type and number
+Switch(config)#int FastEthernet1/1
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit
+Switch(config)#int FastEthernet2/1
+Switch(config-if)#switchport access vlan 20
+Switch(config-if)#exit
+Switch(config)#int FastEthernet3/1
+Switch(config-if)#switchport access vlan 20
+Switch(config-if)#
