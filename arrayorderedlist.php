@@ -12,8 +12,9 @@
     $arraylength=count($programs);
     for($i=0;$i<$arraylength;$i++){
     echo "<li>".$programs[$i]." </li>";
+    //echo $programs[$i];
     }
-    echo "</ol>";
+   echo "</ol>";
     ?>
 </body>
 </html>
