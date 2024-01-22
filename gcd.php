@@ -6,8 +6,7 @@ function FunctionName($a,$b){
         return $b;
     }
     else
-    return 
-    
+    return Functionname($b,$a%$b);
 }
 
 ?>
