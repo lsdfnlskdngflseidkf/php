@@ -15,7 +15,7 @@
             foreach($colleges as $key=>$value){
                 
                 echo "<tr>";
-                    foreach($key as $innerkey=>$innervalue){
+                    foreach($value as $innerkey=>$innervalue){
                         echo "<td>$innervalue</td>";
                     }
                     echo "</tr>";
