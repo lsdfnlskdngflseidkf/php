@@ -15,7 +15,7 @@
     </form>
     <?php
     if(isset($_POST["FName"]) and isset($_POST["LName"])){
-        echo "Your name is ".$_POST["FName"]." ".$_POST["LName"];
+        echo "Your name is ".$_POST["FName"]." ".$_POST["LName"]."(Using Post Method)";
         echo "<br>";   
     }
     ?>
