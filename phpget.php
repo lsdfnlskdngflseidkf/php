@@ -6,17 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="POST">
-        <input type="text" name="FName"><br>
-        <label for="FName">First Name</label><br/>
-        <input type="text" name="LName"><br>
-        <label for="LName">Last Name</label><br><br>
+    <form action="" method="GET">
+        <input type="text" name="num1"><br>
+        <label for="num1">First Number</label><br/>
+        <input type="text" name="num2"><br>
+        <label for="num2">Second Number</label><br><br>
         <button type="submit">Submit</button>
     </form>
     <?php
-    if(isset($_POST["FName"]) and isset($_POST["LName"])){
-        echo "Your name is ".$_POST["FName"]." ".$_POST["LName"]."(Using Post Method)";
-        echo "<br>";   
+    if(isset($_GET["num1"]) and isset($_GET["num2"])){
+        $firstnum=$_GET['num1'];
+        $secondnum=$_GET['num2'];
+        echo "<br><br>".$firstnum+$secondnum." is the sum of those two Numbers";
     }
     ?>
 </body>
