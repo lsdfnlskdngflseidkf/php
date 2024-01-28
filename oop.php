@@ -7,7 +7,6 @@ function assign($name,$age,$roll){
     $this->name=$name;
     $this->age=$age;
     $this->roll=$roll;
-
 }
 function displayAll(){
     echo "Name: ".$this->name."<br>";
