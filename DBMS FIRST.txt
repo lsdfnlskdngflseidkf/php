@@ -1,0 +1,8 @@
+show databases
+create databse Ujwal;
+show databases 
+use Ujwal;
+create table STUDENT(roll int,name varchar(20),address varchar(30));
+insert into student values(1,"Ujwal","Sallaghari");
+desc STUDENT;
+add 10 data ;
