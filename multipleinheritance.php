@@ -7,11 +7,11 @@
 </head>
 <body>
     <?php
-    interface interface1{
-        function add($num0,$num1){}
+    interface Interface1{
+        function add(){}
     }
-interface interface2{
-    function sub($minuend,$subtrahend){
+interface Interface2{
+    function sub(){
     }
 
 }
@@ -21,7 +21,7 @@ class ParentClass{
       
     }
 }
-class Childclass extends Parentclass implements interface1,interface2{
+class Childclass extends Parentclass implements Interface1,Interface2{
         function add($num0,$num1){
  echo "sum=".$num0+$num1."<br>";
         }
