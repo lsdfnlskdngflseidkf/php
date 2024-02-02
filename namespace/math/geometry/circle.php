@@ -1,9 +1,9 @@
 <?php
 // math/geometry/circle.php
-namespace geometry;
+namespace math\geometry;
 
 require "constants.php";
-use math\constants as Constants;
+use math\geometry\constants as Constants;
 
 class Circle {
     public $radius;
