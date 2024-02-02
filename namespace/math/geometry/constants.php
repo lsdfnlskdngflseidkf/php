@@ -1,9 +1,8 @@
 <?php
-namespace math;
-class constansts{
-    const pi=3.14159;
+// math/geometry/constants.php
+namespace math\geometry;
+
+class constants {
+    const pi = 3.14159;
 }
-
-
-
 ?>
