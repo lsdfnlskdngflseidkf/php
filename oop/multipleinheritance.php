@@ -5,10 +5,10 @@
 <body>
     <?php
     interface Interface1{
-        function add(); 
+        function add($num,$num1); 
     }
 interface Interface2{
-    function sub();
+    function sub($n1,$n2);
 }
 class ParentClass{
     function multiply($num1,$num2){
@@ -17,9 +17,6 @@ class ParentClass{
 }
 class ChildClass extends Parentclass implements Interface1,Interface2
 {
-        function __construct(){
-            echo "Hahah ";
-        }
         function add($num0,$num1){
  echo "sum=".$num0+$num1."<br>";
         }
