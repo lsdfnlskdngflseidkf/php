@@ -1,5 +1,6 @@
 <?php
 /*
+save the name and email as object properties
 name 
 email
 phn no
