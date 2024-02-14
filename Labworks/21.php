@@ -87,26 +87,26 @@ function isLeapYear($year) {
 
 // Testing the functions
 $number = 12321;
-echo "Is $number a palindrome? " . (isPalindrome($number) ? "Yes" : "No") . "\n";
+echo "Is $number a palindrome? <br>" . (isPalindrome($number) ? "Yes" : "No") . "<br>";
 
 $number = 153;
-echo "Is $number an Armstrong number? " . (isArmstrong($number) ? "Yes" : "No") . "\n";
+echo "Is $number an Armstrong number? <br>" . (isArmstrong($number) ? "Yes" : "No") . "<br>";
 
 $number = 12345;
-echo "Reverse of $number is " . reverseNumber($number) . "\n";
+echo "Reverse of $number is " . reverseNumber($number) . "<br>";
 
 $number = -10;
-echo "$number is " . checkNumber($number) . "\n";
+echo "$number is " . checkNumber($number) . "<br>";
 
 $number = 123;
-echo "Sum of digits of $number is " . sumOfDigits($number) . "\n";
+echo "Sum of digits of $number is " . sumOfDigits($number) . "<br>";
 
 $a = 1;
 $b = -3;
 $c = 2;
-echo "Roots of the quadratic equation $a*x^2 + $b*x + $c = 0 are: " . implode(", ", quadraticRoots($a, $b, $c)) . "\n";
+echo "Roots of the quadratic equation $a*x^2 + $b*x + $c = 0 are: " . implode(", ", quadraticRoots($a, $b, $c)) . "<br>";
 
 $year = 2024;
-echo "$year is " . (isLeapYear($year) ? "a leap year" : "not a leap year") . "\n";
+echo "$year is " . (isLeapYear($year) ? "a leap year" : "not a leap year") . "<br>";
 
 ?>
