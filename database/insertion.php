@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- https://pastebin.com/Gt1Puj5P  -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Information Form</title>
-    <!-- <style>
+    <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Adjusted alignment for better scrolling */
+            align-items: flex-start;
+            /* Adjusted alignment for better scrolling */
             min-height: 100vh;
             background-color: #f0f0f0;
             /* Background color for the entire page */
@@ -23,9 +25,12 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 80%; /* Adjusted width to fit most screens */
-            max-width: 600px; /* Limiting maximum width for readability */
-            overflow: auto; /* Enable scrolling for the form */
+            width: 80%;
+            /* Adjusted width to fit most screens */
+            max-width: 600px;
+            /* Limiting maximum width for readability */
+            overflow: auto;
+            /* Enable scrolling for the form */
         }
 
         label {
@@ -62,7 +67,8 @@
             background-color: #45a049;
             /* Darker green color on hover */
         }
-    </style> -->
+
+    </style>
 </head>
 
 <body>
@@ -108,11 +114,9 @@
 
         <label for="activities"> Activities:</label>
         <input type="text" name="activities"><br><br>
-
         <input type="submit" value="Submit">
     </form>
-
-    <?php
+        <?php
    $servername="Localhost"; 
    $username="root";
    $password="";
@@ -122,32 +126,23 @@
     die("Connection to the database has failed".$connection->connect_error);
    }
 else{
-  echo "Connection Successful";
+  echo "<p> Connection Successful</p>";
 }
-
-    if (isset($_POST["Fname"], $_POST['email'], $_POST['phone'], $_POST['address'], $_POST['city'], $_POST['postal'], $_POST['type'], $_POST['interestedplaces'], $_POST['transportation'], $_POST['activities'])) {
-        $name = $_POST['Fname'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $address = $_POST['address'];
-        $city = $_POST['city'];
-        $province = $_POST['province'];
-        $postal = $_POST['postal'];
-        $country = $_POST['country'];
-        $type = $_POST['type'];
-        $interestedplaces = $_POST['interestedplaces'];
-        $transportation = $_POST['transportation'];
-        $activities = $_POST['activities'];
-    $query ="INSERT INTO travelbooking (fullName, email, phone, address, city, province, postalcode, country, travelType, interestedplaces, transportation, activities) VALUES ('$name', '$email', '$phone', '$address', '$city', '$province', '$postal', '$country', '$type', '$interestedplaces', '$transportation', '$activities')";
-
-    if($connection->query($query)==true){
-        echo "<br>New record inserted successfully";
-    }
-    else{
-        die("Error".$connection->error);
-    }
-    }
-    ?>
+         if (isset($_POST["Fname"], $_POST['email'], $_POST['phone'], $_POST['address'], $_POST['city'],
+            $_POST['postal'], $_POST['type'], $_POST['interestedplaces'], $_POST['transportation'],
+            $_POST['activities'])) { $name=$_POST['Fname']; $email=$_POST['email']; $phone=$_POST['phone'];
+            $address=$_POST['address']; $city=$_POST['city']; $province=$_POST['province']; $postal=$_POST['postal'];
+            $country=$_POST['country']; $type=$_POST['type']; $interestedplaces=$_POST['interestedplaces'];
+            $transportation=$_POST['transportation']; $activities=$_POST['activities'];
+            $query="INSERT INTO travelbooking (fullName, email, phone, address, city, province, postalcode, country, travelType, interestedplaces, transportation, activities) VALUES ('$name', '$email', '$phone', '$address', '$city', '$province', '$postal', '$country', '$type', '$interestedplaces', '$transportation', '$activities')"
+            ; if($connection->query($query)==true){
+            echo "<p><br>New record inserted successfully</p>";
+            }
+            else{
+            die("Error".$connection->error);
+            }
+            }
+            ?>
 </body>
 
 </html>
