@@ -141,7 +141,7 @@ else{
     $query ="INSERT INTO travelbooking (fullName, email, phone, address, city, province, postalcode, country, travelType, interestedplaces, transportation, activities) VALUES ('$name', '$email', '$phone', '$address', '$city', '$province', '$postal', '$country', '$type', '$interestedplaces', '$transportation', '$activities')";
 
     if($connection->query($query)==true){
-        echo "New record inserted successfully";
+        echo "<br>New record inserted successfully";
     }
     else{
         die("Error".$connection->error);
