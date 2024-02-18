@@ -24,7 +24,7 @@
  else{
     echo "Database connection has failed".$connection->connect_error;
  }
- $connection->select_db("webtechtest");
+ $connection->select_db("WEBTECHTEST");
  $query="Select * from travelbooking";
  $result=$connection->query($query);
 ?>
@@ -48,7 +48,7 @@
 while($row=$result->fetch_assoc()){
 echo "<tr>
     <td>{$row['id']}</td>
-    <td>{$row['fullname']}</td>
+    <td>{$row['fullName']}</td>
     <td>{$row['email']}</td>
     <td>{$row['phone']}</td>
     <td>{$row['address']}</td>

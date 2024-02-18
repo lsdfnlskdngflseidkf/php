@@ -22,7 +22,7 @@
      else{
         echo "Database connection has failed".$connection->connect_error;
      }
-     $connection->select_db("webtechtest");
+     $connection->select_db("WEBTECHTEST");
      $createtable="CREATE TABLE travelbooking(
 id INT AUTO_INCREMENT PRIMARY KEY,
 fullName VARCHAR(255) NOT NULL,

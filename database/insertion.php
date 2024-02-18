@@ -120,7 +120,7 @@
    $servername="Localhost"; 
    $username="root";
    $password="";
-   $database="webtech";
+   $database="WEBTECHTEST";
    $connection=new Mysqli($servername,$username,$password,$database);
    if($connection->connect_error){
     die("Connection to the database has failed".$connection->connect_error);
