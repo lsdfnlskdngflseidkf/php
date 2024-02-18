@@ -11,7 +11,7 @@
 
     <form action="" method="POST">
         <label for="Fname">First Name:</label>
-        <input type="text" name="Fname" ><br><br>i
+        <input type="text" name="Fname" ><br><br>
 
         <label for="Lname">Last Name:</label>
         <input type="text" name="Lname" ><br><br>
