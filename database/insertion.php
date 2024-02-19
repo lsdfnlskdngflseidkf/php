@@ -130,11 +130,21 @@ else{
 }
          if (isset($_POST["Fname"], $_POST['email'], $_POST['phone'], $_POST['address'], $_POST['city'],
             $_POST['postal'], $_POST['type'], $_POST['interestedplaces'], $_POST['transportation'],
-            $_POST['activities'])) { $name=$_POST['Fname']; $email=$_POST['email']; $phone=$_POST['phone'];
-            $address=$_POST['address']; $city=$_POST['city']; $province=$_POST['province']; $postal=$_POST['postal'];
-            $country=$_POST['country']; $type=$_POST['type']; $interestedplaces=$_POST['interestedplaces'];
-            $transportation=$_POST['transportation']; $activities=$_POST['activities'];
-            $query="INSERT INTO travelbooking (fullName, email, phone, address, city, province, postalcode, country, travelType, interestedplaces, transportation, activities) VALUES ('$name', '$email', '$phone', '$address', '$city', '$province', '$postal', '$country', '$type', '$interestedplaces', '$transportation', '$activities')"
+            $_POST['activities']))
+             { 
+             $name=$_POST['Fname'];
+             $email=$_POST['email']; 
+             $phone=$_POST['phone'];
+             $address=$_POST['address']; 
+             $city=$_POST['city']; 
+             $province=$_POST['province']; 
+             $postal=$_POST['postal'];
+             $country=$_POST['country']; 
+             $type=$_POST['type']; 
+             $interestedplaces=$_POST['interestedplaces'];
+             $transportation=$_POST['transportation']; 
+             $activities=$_POST['activities'];
+             $query="INSERT INTO travelbooking (fullName, email, phone, address, city, province, postalcode, country, travelType, interestedplaces, transportation, activities) VALUES ('$name', '$email', '$phone', '$address', '$city', '$province', '$postal', '$country', '$type', '$interestedplaces', '$transportation', '$activities')"
             ; if($connection->query($query)==true){
             echo "<p><br>New record inserted successfully</p>";
             }

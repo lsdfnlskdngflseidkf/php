@@ -25,7 +25,7 @@
     echo "Database connection has failed".$connection->connect_error;
  }
  $connection->select_db("WEBTECHTEST");
- $query="Select * from travelbooking";
+ $query="Select * from travelbooking where is_deleted=false";
  $result=$connection->query($query);
 ?>
 <table border="1" >
