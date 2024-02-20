@@ -13,6 +13,9 @@ if ($connection->connect_error) {
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST['id'];
+    $alterquery="ALTER TABLE travelbooking
+ADD is_deleted boolean default false; ";
+$connection->query($alterquery);
 
     $updateQuery = "UPDATE travelbooking SET  is_deleted= 1 WHERE id = '$id'";
     if($connection->query($updateQuery)){
