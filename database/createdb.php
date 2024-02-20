@@ -36,6 +36,7 @@ country VARCHAR(255) NOT NULL,
 travelType ENUM('business','vacation') NOT NULL,
 interestedplaces VARCHAR(255) NOT NULL,
 transportation ENUM('bus','plane','train') NOT NULL,
+
 activities VARCHAR(255) NOT NULL);";
 if($connection->query($createtable)){
     echo "Table created successfully";
