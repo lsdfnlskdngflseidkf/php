@@ -11,20 +11,6 @@ if ($connection->connect_error) {
 } else {
     echo "Database connection has succeeded<br>";
 }
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $id = $_POST['id'];
-//     $columnToUpdate = $_POST['column'];
-//     $newValue = $_POST['new_value'];
-
-//     y
-//     if($connection->query($updateQuery)){
-//         echo "The record was updated successfully";
-//     } 
-//     else{
-//         echo "Error".$connection->error;
-//     }
-// }
-// $connection->close();
 if(isset($_POST['id'])){
     $id=$_POST['id'];
     ?>
@@ -51,26 +37,19 @@ if(isset($_POST['column'])){
    $column= $_POST['column'];
  $retrievequery="select $column from travelbooking where id=$id]';";
  $default=$connection->query($retrievequery);
- echo " <form action='' method=POST>
-        <input type=text name=updatevaluevalue=$default>
-        </form>
-        ";
+ ?>
+
+ <form action='' method=POST>
+        <input type=text name=updatevalue value="<?php echo $default?>">
+ </form>
+ <?php
 if(isset($_POST['updatevalue'])){
     $value=$_POST['updatevalue'];
-    $updateQuery="update travelbooking set $column=$value";
-    if($connection->query($updatequery)){
-        echo "Updated the data successfully";
-    }
-    else{
-        echo "the data was not updated".$connection->error;
-    }
-}
-}
-?>
-    <?php
-}
+    $updatequery="update travelbooking set $column=$default where id=$id";
+
 else{
     ?>
+
     <!DOCTYPE html>
     <html lang="en">
     <head>
