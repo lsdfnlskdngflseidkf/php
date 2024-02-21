@@ -9,10 +9,10 @@ include_once "connecting.php";
 include_once "fileopeningread.php";
 
 while($data=fgetcsv($file,'1000',",")){
-    $id = mysqli_real_escape_string($connection, $data[0]);
-    $name = mysqli_real_escape_string($connection, $data[1]);
-    $price = mysqli_real_escape_string($connection, $data[2]);
-    $quan = mysqli_real_escape_string($connection, $data[3]);
+    $id =  $data[0];
+    $name =  $data[1];
+    $price =  $data[2];
+    $quan =$data[3];
     $insertquery="insert into product(id,name,price,quantity) values($id,'$name',$price,$quan);";
 
     if($connection->query($insertquery)){
