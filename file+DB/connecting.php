@@ -17,11 +17,11 @@
 else{
   echo "Connection Successful";
 }
-$createquery="create table product(
+$createquery="create table if not exists product(
     id int primary key,
     name varchar(255) not null,
     price int not null,
-    quantity int not null,);";
+    quantity int not null);";
     $connection->query($createquery);
   ?>
 </body>

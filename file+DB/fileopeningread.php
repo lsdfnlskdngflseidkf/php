@@ -11,14 +11,6 @@
 
 $file = fopen($filename, 'r');
 
-if ($file) {
-
-    fclose($file);
-
-    echo "File '$filename' has been created successfully.";
-} else {
-    echo "Error creating the file.";
-}
-    ?>
+ ?>
 </body>
 </html>
