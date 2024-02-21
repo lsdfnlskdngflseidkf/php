@@ -36,7 +36,7 @@ $connection->close();
     <title>Soft delete a row</title>
 </head>
 <body>
-    <h2>Delete reocrd</h2>
+    <h2>Delete record</h2>
     <form method="post" action="">
         <label for="id">Record ID:</label>
         <input type="text" name="id" id="id" required><br><br>

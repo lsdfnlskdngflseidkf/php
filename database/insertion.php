@@ -6,68 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Information Form</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            /* Adjusted alignment for better scrolling */
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            /* Background color for the entire page */
-        }
-
-        form {
-            background-color: #ffffff;
-            /* Background color for the form */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            /* Adjusted width to fit most screens */
-            max-width: 600px;
-            /* Limiting maximum width for readability */
-            overflow: auto;
-            /* Enable scrolling for the form */
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        input[type="checkbox"] {
-            margin-right: 5px;
-            vertical-align: middle;
-        }
-
-        input[type="submit"] {
-            background-color: #4caf50;
-            /* Green submit button color */
-            color: white;
-            cursor: pointer;
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-            /* Darker green color on hover */
-        }
-
+    
     </style>
 </head>
 
