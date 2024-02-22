@@ -23,7 +23,7 @@
         echo "Database connection has failed".$connection->connect_error;
      }
      $connection->select_db("WEBTECHTEST");
-     $createtable="CREATE TABLE travelbooking(
+     $createtable="CREATE TABLE if not exists travelbooking(
 id INT AUTO_INCREMENT PRIMARY KEY,
 fullName VARCHAR(255) NOT NULL,
 email VARCHAR(255) NOT NULL,

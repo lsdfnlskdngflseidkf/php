@@ -14,7 +14,6 @@ while($data=fgetcsv($file,'1000',",")){
     $price =  $data[2];
     $quan =$data[3];
     $insertquery="insert into product(id,name,price,quantity) values($id,'$name',$price,$quan);";
-
     if($connection->query($insertquery)){
         echo "data was inserted in to the database<br>";
     }
@@ -23,7 +22,6 @@ while($data=fgetcsv($file,'1000',",")){
     }
 }
 $connection->close();
-// fgetcsv/ $file,'1000',","
 ?> 
 </body>
 </html>
