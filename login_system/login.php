@@ -6,24 +6,10 @@ if(isset($_POST['email'],$_POST['password'])){
     $query="select password from accounts where email='$email'";
     $pass=$connection->query($query);
     $test=$pass->fetch_assoc();
-    echo $userpassword;
-    print_r($test);
+    
     if($test[1]==$userpassword)
     {
-      ?>
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <title>login</title>
-      </head>
-      <body>
-        Login successful
-      </body>
-      </html> 
-      <?php
-
-
-
+      echo "Login successful";
     }
     else{
       echo "Login failed please try again";
