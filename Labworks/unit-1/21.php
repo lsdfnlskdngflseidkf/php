@@ -1,6 +1,5 @@
 <?php
 
-// a. Function to check if a number is palindrome or not
 function isPalindrome($number) {
     $originalNumber = $number;
     $reverseNumber = 0;
@@ -14,7 +13,6 @@ function isPalindrome($number) {
     return $originalNumber == $reverseNumber;
 }
 
-// b. Function to check if a number is an Armstrong number or not
 function isArmstrong($number) {
     $originalNumber = $number;
     $sum = 0;
@@ -28,7 +26,6 @@ function isArmstrong($number) {
     return $originalNumber == $sum;
 }
 
-// c. Function to reverse a number
 function reverseNumber($number) {
     $reverse = 0;
 
@@ -41,7 +38,6 @@ function reverseNumber($number) {
     return $reverse;
 }
 
-// d. Function to check if a number is positive, negative, or zero
 function checkNumber($number) {
     if ($number > 0) {
         return "Positive";
@@ -52,7 +48,6 @@ function checkNumber($number) {
     }
 }
 
-// e. Function to calculate the sum of individual digits of a number
 function sumOfDigits($number) {
     $sum = 0;
 
@@ -64,7 +59,6 @@ function sumOfDigits($number) {
     return $sum;
 }
 
-// f. Function to calculate the roots of a quadratic equation (ax^2 + bx + c = 0)
 function quadraticRoots($a, $b, $c) {
     $delta = $b * $b - 4 * $a * $c;
 
@@ -80,12 +74,10 @@ function quadraticRoots($a, $b, $c) {
     }
 }
 
-// g. Function to check if a given year is a leap year or not
 function isLeapYear($year) {
     return (($year % 4 == 0 && $year % 100 != 0) || ($year % 400 == 0));
 }
 
-// Testing the functions
 $number = 12321;
 echo "Is $number a palindrome? <br>" . (isPalindrome($number) ? "Yes" : "No") . "<br>";
 

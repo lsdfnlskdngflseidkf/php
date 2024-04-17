@@ -10,7 +10,6 @@
 <h2>Pattern Display</h2>
 
 <?php
-// Displaying pattern 1
 echo "<h3>Pattern 1:</h3>";
 for ($i = 7; $i >= 1; $i--) {
     for ($j = 1; $j <= $i; $j++) {
@@ -25,7 +24,6 @@ for ($i = 1; $i <= 7; $i++) {
     }
     echo "<br>";
 }
-// Displaying pattern 2
 echo "<h3>Pattern 3:</h3>";
 for ($i = 1; $i <= 7; $i++) {
     for ($j = 1; $j <= $i; $j++) {

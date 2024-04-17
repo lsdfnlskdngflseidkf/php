@@ -9,7 +9,6 @@
 <h2>Electricity Bill Calculator</h2>
 
 <?php
-// Function to calculate electricity bill
 function calculateElectricityBill($units) {
     $totalBill = 0;
 
