@@ -18,11 +18,12 @@ class Student
         $this->semester = $semester;
     }
 }
-$student1 = new Student(1, "Ujwal Parajuli", 19, "SallaGhari", "Management", 4);
-echo "Student ID: " . $student1->id . "<br>";
-echo "Student Name: " . $student1->name . "<br>";
-echo "Student Age: " . $student1->age . "<br>";
-echo "Student Address: " . $student1->address . "<br>";
-echo "Student Faculty: " . $student1->faculty . "<br>";
-echo "Student Semester: " . $student1->semester . "<br>";
+public function copycon(Student $obj){
+    $this->id = $obj->id;
+    $this->name = $obj->name;
+    $this->age = $obj->age;
+    $this->address = $obj->address;
+    $this->faculty = $obj->faculty;
+    $this->semester = $obj->semester;
+}
 ?>
