@@ -1,0 +1,3 @@
+This is a Test Text file that will be used for all the file handling tasks in the Lab reports.
+This is the second line.
+this is the third line.
