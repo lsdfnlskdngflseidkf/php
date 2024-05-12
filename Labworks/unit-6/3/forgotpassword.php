@@ -25,7 +25,8 @@
         $sql = "SELECT * FROM accounts WHERE email='$user_email' AND username='$user_username'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
-            $new_password = "pass@123";
+            $password = "pass@123";
+            $new_password=md5("pass@123");
             $update_query = "UPDATE accounts SET password='$new_password' WHERE email='$user_email'";
             if ($conn->query($update_query) === TRUE) {
                 echo "Password reset successful! Your new password is: " . $new_password;
