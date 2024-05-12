@@ -26,6 +26,19 @@
         <input type="reset" value="Reset Form">
     </form>
     <?php
+    class User
+    {
+        private $username;
+        private $email;
+        private $phone;
+    
+        public function __construct($username, $email, $phone)
+        {
+            $this->username = $username;
+            $this->email = $email;
+            $this->phone = $phone;
+        }
+    }
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_FILES['screenshot']) && $_FILES['screenshot']['error'] === UPLOAD_ERR_OK) {
             $username = $_POST["name"];
@@ -37,7 +50,7 @@
             $baseDir = "Ticket/customer";
             $screenshotsDir = "$baseDir/screenshots";
             $commentsDir = "$baseDir/comments";
-
+            $user = new User($username, $email, $phone);
             if (!is_dir($baseDir)) {
                 mkdir($baseDir, 0755, true);
             }
