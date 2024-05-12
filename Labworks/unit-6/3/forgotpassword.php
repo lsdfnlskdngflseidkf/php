@@ -6,7 +6,7 @@
 <body>
     <?php
     if(isset($_SESSION['username'])){
-        header(Location:home.php)
+        header("Location: home.php");
     }
     $servername = "localhost";
     $username = "root";

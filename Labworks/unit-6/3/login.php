@@ -1,5 +1,8 @@
 <?php
 require_once "connecting.php";
+if(isset($_SESSION['username'])){
+  header("Location: home.php");
+}
 if(isset($_POST['email'],$_POST['password'])){
     $email=$_POST['email'];
     $userpassword=md5($_POST['password']);
