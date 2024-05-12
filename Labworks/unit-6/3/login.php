@@ -17,6 +17,9 @@ if(isset($_POST['email'],$_POST['password'])){
       session_start();
       $_SESSION['username']='Ujwal';
       echo "Login successful";
+      if(isset($_SESSION['username'])){
+      header("Location: home.php");
+}
     } 
     else{
       echo "Login failed please try again";

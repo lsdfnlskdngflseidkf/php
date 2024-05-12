@@ -3,7 +3,6 @@ require_once "connecting.php";
 if(isset($_SESSION['username'])){
     header("Location: home.php");
 }
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = md5($_POST["password"]);

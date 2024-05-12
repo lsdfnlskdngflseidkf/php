@@ -29,7 +29,7 @@
             $new_password=md5("pass@123");
             $update_query = "UPDATE accounts SET password='$new_password' WHERE email='$user_email'";
             if ($conn->query($update_query) === TRUE) {
-                echo "Password reset successful! Your new password is: " . $new_password;
+                echo "Password reset successful! Your new password is: " . $password;
             } else {
                 echo "Error updating password: " . $conn->error;
             }
