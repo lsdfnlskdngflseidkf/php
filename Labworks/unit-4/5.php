@@ -27,6 +27,19 @@
         <input type="submit" value="Submit">
         <input type="reset" value="Reset Form">
     </form>
+    <?php
+$name=$_POST['name'];
+$email=$_POST['mail'];
+$phone=$_POST['phone'];
+$problem=$_POST['problem'];
+$comment=$_POST['comment'];
+$screenshot=$_FILES['screenshot'];
+mkdir("Ticket",0777,true);
+mkdir("Ticket/customer",0777,true);
+mkdir("Ticket/comment",0755,true);
+mkdir("Ticket/screenshot",0755,true);
+$file=fopen("Ticket/comment/",0755,true);
+?>
 </body>
 
 </html>
