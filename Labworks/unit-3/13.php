@@ -23,5 +23,5 @@ $person->name = 'Ujwal Parajuli';
 $person->age = 19;
 echo $person->name . ' is ' . $person->age . ' years old.' . "<br>";
 echo $person->undefined_property . "<br>";
-$person->sayHello('Dikesh', 'Spandan');
+$person->sayHello('argument1l', 'argument2');
 ?>

@@ -22,6 +22,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
+while(true){
+    if(isset($_SESSION['username'])){
+    header("Location: home.php");
+  }
+  }
 ?>
 <html>
 <body>

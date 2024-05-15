@@ -1,13 +1,6 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electricity Bill Calculator</title>
-</head>
 <body>
 <h2>Electricity Bill Calculator</h2>
-
 <?php
 function calculateElectricityBill($units) {
     $totalBill = 0;
@@ -25,19 +18,16 @@ function calculateElectricityBill($units) {
     return $totalBill;
 }
 if(isset($_POST["units"])){
-
     $units = $_POST["units"];
     $electricityBill = calculateElectricityBill($units);
     echo "<p>Units Consumed: $units</p>";
     echo "<p>Total Bill Amount: Rs. $electricityBill</p>";
 }
 ?>
-
 <form method="post" action="">
     <label for="units">Enter Units Consumed:</label>
     <input type="number" id="units" name="units" required>
     <button type="submit">Calculate Bill</button>
 </form>
-
 </body>
 </html>

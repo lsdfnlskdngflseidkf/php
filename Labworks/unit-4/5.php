@@ -51,6 +51,12 @@
             $screenshotsDir = "$baseDir/screenshots";
             $commentsDir = "$baseDir/comments";
             $user = new User($username, $email, $phone);
+            $file_type = mime_content_type($_FILES['screenshot']['tmp_name']);
+
+            if ($file_type != 'image/png') {
+                echo "Please upload a PNG file";
+                die;
+            }
             if (!is_dir($baseDir)) {
                 mkdir($baseDir, 0755, true);
             }

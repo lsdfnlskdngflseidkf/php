@@ -29,3 +29,4 @@ $student->age = 20;
 $student->level = "Bachelor's";
 $student->speaks(); 
 $student->studies();
+?>

@@ -1,10 +1,4 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 <body>
 <?php
 function inverse($number) {
@@ -16,7 +10,6 @@ function inverse($number) {
     }while ($number > 0) ;
     return $reverse;
 }
-
 function palindromeCheck($number){
     $reverse = 0;
     $temp = $number;
@@ -35,7 +28,6 @@ function palindromeCheck($number){
         echo "The number is not a palindrome<br>";
     }
 }
-
 function sumDigits($number){
     $sum = 0;
     do{
@@ -45,7 +37,6 @@ function sumDigits($number){
     }while($number > 0);
     return $sum;
 }
-
 $originalnum = 12345;
 echo inverse($originalnum);
 echo "<br>";
@@ -53,6 +44,5 @@ $anothernum = 323;
 palindromeCheck($anothernum);
 echo sumDigits($originalnum);
 ?>
-
 </body>
 </html>

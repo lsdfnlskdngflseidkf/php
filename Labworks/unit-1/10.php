@@ -1,7 +1,6 @@
 <?php
 // Define a variable representing the day of the week
 $day = 4; // For example, let's say we want to represent Thursday
-
 // Use an elseif ladder to echo the day of the week based on the provided numbering scheme
 if ($day == 1) {
     echo "Sunday\n";

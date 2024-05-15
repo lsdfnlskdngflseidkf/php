@@ -39,5 +39,9 @@ else{
 </body>
 </html>
 <?php
+while(true){
+  if(isset($_SESSION['username'])){
+  header("Location: home.php");
 }
+}}
 ?>

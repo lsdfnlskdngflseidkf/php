@@ -1,14 +1,6 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pattern Display</title>
-</head>
 <body>
-
 <h2>Pattern Display</h2>
-
 <?php
 echo "<h3>Pattern 1:</h3>";
 for ($i = 7; $i >= 1; $i--) {
@@ -32,6 +24,5 @@ for ($i = 1; $i <= 7; $i++) {
     echo "<br>";
 }
 ?>
-
 </body>
 </html>

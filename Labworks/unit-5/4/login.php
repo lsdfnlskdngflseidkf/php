@@ -7,7 +7,7 @@ if(isset($_POST['email'],$_POST['password'])){
     $pass=$connection->query($query);
     $test=$pass->fetch_assoc();
 
-    if($test[1]==$userpassword)
+    if($test['password']==$userpassword)
     {
       echo "Login successful";
     } 

@@ -20,7 +20,7 @@ class Calculator
     }
 }
 $calculator = new Calculator();
-echo $calculator->add(2, 3);
-echo $calculator->add(2, 3, 4);
-echo $calculator->add(2, 3, 4, 5);
+echo $calculator->add(2, 3)."<br>";
+echo $calculator->add(2, 3, 4)."<br>";
+echo $calculator->add(2, 3, 4, 5)."<br>";
 ?>

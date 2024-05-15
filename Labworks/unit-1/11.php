@@ -1,6 +1,6 @@
 <?php
 // Define a variable representing the day of the week (Sunday = 1, Monday = 2, ..., Saturday = 7)
-$day = 4; // For example, let's say we want to represent Thursday
+$day = 5; // For example, let's say we want to represent Thursday
 
 // Use a switch-case statement to echo the day of the week based on the provided numbering scheme
 switch ($day) {

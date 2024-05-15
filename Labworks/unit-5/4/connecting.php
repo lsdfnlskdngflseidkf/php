@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
   <?php
      $servername="Localhost"; 
      $username="root";
@@ -33,7 +26,4 @@ $createquery="create table if not exists accounts(
   }else{
    echo "error creating Table ";
   }
-
   ?>
-</body>
-</html>

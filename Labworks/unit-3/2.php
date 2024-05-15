@@ -4,7 +4,6 @@ class Car
     public $make;
     public $model;
     public $year;
-
     public function __construct($make = "idk what make means", $model = "Corolla", $year = 2020)
     {
         $this->make = $make;

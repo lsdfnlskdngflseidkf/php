@@ -32,3 +32,4 @@ echo "eSewa Payment ID: $paymentId<br>";
 $khaltiPG = new KhaltiPG();
 $paymentId = $khaltiPG->makePayment(200.0, $paymentDetails);
 echo "Khalti Payment ID: $paymentId<br>";
+?>

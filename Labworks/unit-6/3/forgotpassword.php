@@ -37,6 +37,11 @@
             echo "Invalid username or email!";
         }
     }
+    while(true){
+        if(isset($_SESSION['username'])){
+        header("Location: home.php");
+      }
+      } 
     ?>
     <h2>Forgot Password</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">

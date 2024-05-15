@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- https://pastebin.com/Gt1Puj5P  -->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Information Form</title>
-    
-    </style>
-</head>
-
+<html>
 <body>
 
     <form action="" method="POST">
@@ -93,5 +82,4 @@ else{
             }
             ?>
 </body>
-
 </html>
