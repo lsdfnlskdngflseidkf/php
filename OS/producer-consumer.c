@@ -4,16 +4,11 @@ int mutex=1;
 int full=0;
 int empty=10,x=0;
 void producer(){
-    //Decrease Mutex value by 1 
     --mutex;
-    //increase number of full slots by 1
     ++full;
-    //Decrease the number of empty slots by 1
     --empty;
-    //item produced
     x++;
     printf("\n Producer Produces item %d ",x);
-    //increase Mutex value by 1
 }
 //function to consume an item and remove it from the buffer
 void consumer(){
